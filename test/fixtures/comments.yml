@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  content: MyText
+  date: 2018-08-18
+  user: one
+  podcast_episode: one
+
+two:
+  content: MyText
+  date: 2018-08-18
+  user: two
+  podcast_episode: two
