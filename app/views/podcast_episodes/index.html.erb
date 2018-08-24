@@ -2,7 +2,7 @@
 
 <% @podcast_episodes.each do |episode| %>
 
-<p> <%= episode.title %> </p>
+<p> <%= link_to "#{episode.title}", podcast_episode_path(episode) %> </p>
 
 
 <% end %>
