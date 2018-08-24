@@ -1,5 +1,8 @@
 now = Date.today
 
+puts "resetting db (destroying all)"
+
+PodcastEpisode.destroy_all
 
 puts "creating podcast episodes"
 
@@ -8,7 +11,7 @@ podcast_episodes = [
   PodcastEpisode.new(
     title:  "Podcast 001: Brexit and The British Film Industry, Why Won't They Believe me?",
     sub_title: "seo stuff",
-    url: "https://soundcloud.com/user-189172258/podcast-001-brexit-and-the-british-film-industry-why-wont-they-believe-me",
+    url: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/478617393&color=%23332e2b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
     synopsis: "
       Weekly business Podcasts exploring one problem per week being faced by the industry with a diverse mix of thought leaders for fresh insight and perspective- the net effect will be progress towards a solution by the end of the session.
 
