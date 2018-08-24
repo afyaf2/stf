@@ -1,0 +1,8 @@
+<h1> Podcasts_index </h1>
+
+<% @podcast_episodes.each do |episode| %>
+
+<p> <%= link_to "#{episode.title}", podcast_episode_path(episode) %> </p>
+
+
+<% end %>
