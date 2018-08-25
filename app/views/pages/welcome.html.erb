@@ -1,23 +1,25 @@
 <div class="container">
-  <div class="row">
+  <div class="row row-padded-top">
 
-    <div class="col-xs-12 col-md-8">
-      <!-- temporary border styles for left line, need to remove h1 margin to connect -->
-      <div class="col-xs-12" style="border-left: 1px solid red">
+    <div class="col-xs-12 col-md-5 welcome-title">
+      <div class="col-xs-12">
       <h1>Solve</h1>
       </div>
-      <div class="col-xs-12" style="border-left: 1px solid red">
+      <div class="col-xs-12">
       <h1>the</h1>
       </div>
-      <div class="col-xs-12" style="border-left: 1px solid red">
-      <h1>future</h1>
+      <div class="col-xs-12">
+      <h1>future.</h1>
       </div>
     </div>
 
-    <div class="col-xs-12 col-md-4">
-      <button>
-      <%= link_to 'enter', page_path('home') %>
-      </button>
+    <div class="col-xs-12 col-md-7 welcome-subtitle">
+      <div class="subtitle-box">
+        <h2>SOLUTIONS-DRIVEN PODCASTS</h2>
+        <button type="button" class="btn btn-yours">
+          <%= link_to 'ENTER', page_path('home') %>
+        </button>
+      </div>
     </div>
   </div> <!-- row end -->
 
