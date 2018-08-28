@@ -32,14 +32,16 @@
 </div>
 
 <script type="text/javascript">
+  // only use this format for desktop
+  if (screen.width > 480) {
   // calc height of text divs
   var textItems = document.getElementsByClassName('home-text-content');
   var textHeight = 0
   for (var i = textItems.length - 1; i >= 0; i--) {
     textHeight += textItems[i].clientHeight;
+  };
+  // set margin-top of text divs row to be (100vh - textHeight)
+  document.getElementById('dynamic-margin').style.marginTop = `calc(100vh - ${textHeight}px)`;
   }
 
-  // set margin-top of text divs row to be (100vh - textHeight)
-  document.getElementById('dynamic-margin').style.marginTop = `calc(100vh - ${textHeight}px)`
-  //.style.marginTop = "calc(100vh - ${textHeight.toString() + 'px'})"
 </script>

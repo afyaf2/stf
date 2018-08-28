@@ -6,14 +6,12 @@
         </div>
 
         <div class="sidebar-header">
-<!--             <h3>Bootstrap Sidebar</h3>
- -->        </div>
+            <h3>STF</h3>
+        </div>
 
         <ul class="list-unstyled components">
-            <h3>solve the future.</h3>
-
             <li>
-                <a href="#">About</a>
+                <%= link_to 'About', page_path('about') %>
                 <!-- todo - episodes collapsible -> hover expand-->
                 <!-- <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
                 <ul class="collapse list-unstyled" id="pageSubmenu">
@@ -29,10 +27,16 @@
                 </ul> -->
             </li>
             <li>
+              <%= link_to 'Episodes', podcast_episodes_path %>
+            </li>
+            <li>
                 <a href="#">Guests</a>
             </li>
             <li>
                 <a href="#">Contact</a>
+            </li>
+            <li>
+              <%= image_tag("htec-logo-sm", class: 'htec-logo-sm') %>
             </li>
         </ul>
     </nav>
