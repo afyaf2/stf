@@ -1,0 +1,88 @@
+#sidebar {
+    min-width: 220px;
+    max-width: 220px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    /* top layer */
+    z-index: 9999;
+    transition: all 0.3s ease-in;
+    background-color: white;
+    box-shadow: 5px 5px 10px 2px rgba(189,189,189,0.71);
+}
+
+#sidebar.active {
+  left: 0;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    /* full screen */
+    width: 100vw;
+    height: 100vh;
+    /* transparent black */
+    background: rgba(0, 0, 0, 0.7);
+    /* middle layer, i.e. appears below the sidebar */
+    z-index: 998;
+    opacity: 0;
+    /* animate the transition */
+    transition: all 0.5s ease-in-out;
+}
+/* display .overlay when it has the .active class */
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+#dismiss {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    cursor: pointer;
+    /* top right corner of the sidebar */
+    top: 10px;
+    right: 10px;
+}
+
+/* list style */
+
+.sidebar-header {
+  text-align: center;
+  background-color: #8ACB88;
+  h3 {
+    font-family: 'Fjalla One', sans-serif;
+    font-style: Regular;
+    font-size: 32px;
+    margin-top: calc(100% - 25%);
+  }
+}
+.list-unstyled.components {
+  text-align: center;
+  li {
+    a {
+      font-family: 'Cantarell';
+      font-size: 20px;
+      text-decoration: none;
+      color: #575761;
+      letter-spacing: 1.5px;
+    }
+  }
+  li:nth-child(n + 1) {
+    line-height: 6em;
+  }
+
+}
+
+.list-unstyled.components li:nth-last-child(1) {
+  position: absolute;
+  bottom: 0;
+}
+
+
+
+.htec-logo-sm {
+  max-height: 75%;
+  max-width: 75%;
+  padding: 5px;
+}
