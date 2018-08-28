@@ -1,6 +1,37 @@
+/* application styles */
+.application-wrapper {
+  display: block;
+}
+
+.row-no-padding {
+  [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
 h1 {
   font-family: 'Fjalla One', sans-serif;
   font-style: Regular;
+}
+
+.h1-a {
+  color: #8ACB88;
+  font-size: 36;
+  text-spacing: 5%;
+}
+
+.h1-b {
+  color: #FFBF46;
+  font-size: 36;
+  text-spacing: 5%;
+}
+
+p {
+  font-family: 'Cantarell';
+  font-size: 16px;
+  text-spacing: 5%;
+  text-align: justify;
 }
 
 /* welcome page desktop styling */
@@ -31,6 +62,8 @@ h1 {
   }
 }
 
+/* welcome page mobile settings / defaults */
+
 .row-padded-top {
   position: fixed;
   bottom: 15vh;
@@ -60,12 +93,19 @@ h1 {
   button {
     margin: auto;
     display: block;
+
     a {
     font-family: 'Cantarell';
     font-size: 24px;
     text-decoration: none;
-    color: #648381;
+    color: #575761;
     }
+  }
+}
+
+.welcome-subtitle button:hover {
+  a {
+    color: white;
   }
 }
 
@@ -86,6 +126,31 @@ h1 {
 }
 
 .btn-yours:hover {
-  background-color: #F8F9FB;
+  background-color: #8ACB88;
   transition: background 0.5s ease;
 }
+
+/* home page */
+
+.home-top-content {
+  img {
+    max-height: 100vh;
+    min-width: 100%;
+  }
+}
+
+.btn-yours-minimal {
+  color: #575761;
+  border: 1.5px solid #8ACB88;
+  font-weight: bold;
+  height: fit-content;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 15px;
+
+}
+
+/* .btn-yours:hover {
+  background-color: #8ACB88;
+  transition: background 0.5s ease;
+ */
