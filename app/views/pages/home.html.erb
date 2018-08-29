@@ -1,11 +1,27 @@
-<%= render partial: "components/navbar" %>
-<div class="container-fluid">
 
+<div class="container-fluid">
+  <div class="row">
+    <div class="jumbotron home-jumbo">
+      <button type="button" id="sidebarCollapse" class="btn btn-yours-minimal">
+        <i class="fas fa-align-left"></i>
+        <!-- <span >MENU</span> -->
+      </button>
+      <div class="jumbo-cta">
+        <h2> Solve The Future </h2>
+        <p class="lead"> Weekly problem-solving podcasts featuring a diverse mix of thought leaders</p>
+        <button type="button" class="btn-yours-minimal">
+          <span>LISTEN</span>
+        </button>
+      </div>
+      <div class="scroller">
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <!-- <span class="text">Scroll down</span> -->
+      </div>
+    </div>
+  </div>
   <div class="row row-no-padding home-top-content">
-    <button type="button" id="sidebarCollapse" class="btn btn-yours-minimal">
-      <i class="fas fa-align-left"></i>
-      <!-- <span >MENU</span> -->
-    </button>
     <div class="col-xs-12 col-lg-4 ml-auto">
       <div class="col-xs-12 home-text-content" id="dynamic-margin">
         <div class="d-flex justify-content-start">

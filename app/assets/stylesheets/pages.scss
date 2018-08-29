@@ -16,7 +16,7 @@ h1 {
 }
 
 .h1-a {
-  color: #8ACB88;
+  color: #091D28;
   font-size: 36;
   text-spacing: 5%;
 }
@@ -28,7 +28,7 @@ h1 {
 }
 
 p {
-  font-family: 'Cantarell';
+  font-family: 'Cantarell', sans-serif;
   font-size: 16px;
   text-spacing: 5%;
   text-align: justify;
@@ -69,9 +69,10 @@ p {
   bottom: 15vh;
 }
 }
+
 .welcome-title {
-  color: #8ACB88;
-  border-left: 3.5px solid #575761;
+  color: #091D28;
+  border-left: 3.5px solid #FFBF46;
   max-height: 475px;
     h1 {
     font-size: 180px;
@@ -84,7 +85,7 @@ p {
   h2 {
     margin: auto;
     display: block;
-    font-family: 'Cantarell';
+    font-family: 'Cantarell', sans-serif;
     font-style: regular;
     font-size: 36px;
     color: #575761;
@@ -95,7 +96,7 @@ p {
     display: block;
 
     a {
-    font-family: 'Cantarell';
+    font-family: 'Cantarell', sans-serif;
     font-size: 24px;
     text-decoration: none;
     color: #575761;
@@ -116,7 +117,7 @@ p {
 
 .btn-yours {
   color: #575761;
-  border: 1.5px solid #8ACB88;
+  border: 1.5px solid #FFBF46;
   font-weight: bold;
   height: 60px;
   width: 210px;
@@ -126,7 +127,7 @@ p {
 }
 
 .btn-yours:hover {
-  background-color: #8ACB88;
+  background-color: #FFBF46;
   transition: background 0.5s ease;
 }
 
@@ -140,17 +141,141 @@ p {
 }
 
 .btn-yours-minimal {
-  color: #575761;
-  border: 1.5px solid #8ACB88;
+  color: $white;
+  background: none;
+  border: 1.5px solid #FFBF46;
   font-weight: bold;
-  height: fit-content;
-  width: fit-content;
+  height: auto;
+  width: auto;
   padding: 10px 20px;
   border-radius: 15px;
 
+  span {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+  }
 }
 
-/* .btn-yours:hover {
-  background-color: #8ACB88;
-  transition: background 0.5s ease;
+.jumbo-cta {
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform:translate(-50%,-25%);
+  top: 75%;
+  text-align:center;
+
+  h2 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 44px;
+    text-spacing: 1.5px;
+  }
+}
+/* #btn-jumbo {
+
+}
  */
+.home-jumbo {
+  background-image: image-url('stf-jumbotron.jpeg');
+  min-height: 100vh;
+  min-width: 100vw;
+  margin-bottom: 0 !important;
+  position: relative;
+
+
+}
+
+/* scroll/divider settings */
+.row-bottom {
+
+}
+.divider {
+  background-color: #091D28;
+  min-width: 100%;
+}
+
+.scroller {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 24px;
+  height: 24px;
+}
+
+.chevron {
+  position: absolute;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #fff;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+/* .text {
+  display: block;
+  margin-top: 75px;
+  margin-left: -30px;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: .25;
+  animation: pulse 2s linear alternate infinite;
+} */
+
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}
